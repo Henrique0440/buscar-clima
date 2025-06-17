@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Local</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1>Consultar o Clima</h1>
+        <input type="text" id="cidade" placeholder="Digite o nome da cidade">
+        <button onclick="buscarClima()">Buscar</button>
+        <div id="resultado" class="oculto">
+            <h2 id="nomeCidade"></h2>
+            <p><strong>Horario:</strong> <span id="hora"></span></p>
+            <p><strong>Temperatura:</strong> <span id="temperatura"></span> °C</p>
+            <p><strong>Clima:</strong> <span id="descricao"></span></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
