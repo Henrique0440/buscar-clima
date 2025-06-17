@@ -47,11 +47,11 @@ async function buscarDadosClima(url) {
 
     // Fundo de acordo com a temperatura
     if (dados.main.temp <= 24) {
-      document.body.style.backgroundImage = "url('./Imagens/climaFrio.png')";
+      document.body.style.backgroundImage = "url('./imagens/climaFrio.png')";
     } else if (dados.main.temp <= 28) {
-      document.body.style.backgroundImage = "url('./Imagens/climaNublado.png')";
+      document.body.style.backgroundImage = "url('./imagens/climaNublado.png')";
     } else {
-      document.body.style.backgroundImage = "url('./Imagens/climaQuente.png')";
+      document.body.style.backgroundImage = "url('./imagens/climaQuente.png')";
     }
 
     document.getElementById("nomeCidade").innerHTML = dados.name;
